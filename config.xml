@@ -1,11 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.googlesignin" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>GoogleSignIn</name>
-    <description>Sample Apache Cordova App</description>
+    <name>GoogleSignIn Test</name>
+    <description>Sample cordova project to test the google signin plugin functionality</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+
+    <plugin name="cordova-plugin-google-signin" spec="https://github.com/russmedia-digital/cordova-plugin-google-signin">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.741002292512-79l1vjkim5tctosr07kcm61bb4frp7cr"/>
+        <variable name="CLIENT_ID" value="741002292512-cs3emldkmt4vg5e1m9o6b3bpf8i6atfp.apps.googleusercontent.com"/>
+    </plugin>
+    <engine name="android" spec="^10.1.1"/>
+    <engine name="ios" spec="^6.2.0"/>
 </widget>
